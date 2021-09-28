@@ -1,0 +1,85 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+float a, b ,S ,P;
+cout<<"введите две стороны прямоугольника";
+cin>>a>>b;
+S=a*b;
+cout<<"s="<<S<<" ";
+P=2*(a+b);
+cout<<"P="<<P;
+
+
+}
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+float L, d ;
+float p=3.14;
+cout<<"введите диаметр";
+cin>>d;
+L=p*d;
+cout<<"L="<<L<<" ";
+return 0;
+}
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+float a, b,c,d,e;
+cout<<"введите два числа больше нуля";
+cin>>a>>b;
+if (a > 0 and b > 0)
+{
+c=(a*a)+(b*b);
+cout<<"сумм= "<<c<<" ";
+d=(a*a)-(b*b);
+cout<<"разность=" <<d<<" ";
+e=(a*a)*(b*b);
+cout<<"произведение= "<<e;
+
+}
+else
+{
+cout<<"введите число больше нуля";
+}
+return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+float a, b,c,d,e;
+cout<<"введите два числа больше нуля";
+cin>>a>>b;
+if (a != 0 and b !=0)
+{
+c=( (a*a)+(b*b) )/2;
+cout<<"сумм= "<<c<<" ";
+d=( (a*a)-(b*b) )/2;
+cout<<"разность=" <<d<<" ";
+e=( (a*a)*(b*b) )/2;
+cout<<"произведение= "<<e;
+
+}
+
+else
+{
+cout<<"введите число больше нуля";
+}
+return 0;
+}
