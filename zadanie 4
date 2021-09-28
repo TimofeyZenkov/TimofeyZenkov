@@ -32,6 +32,7 @@ L=p*d;
 cout<<"L="<<L<<" ";
 return 0;
 }
+
 3
 
 #include <iostream>
