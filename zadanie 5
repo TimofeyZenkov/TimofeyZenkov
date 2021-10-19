@@ -1,134 +1,765 @@
-N1
+1)
 #include <iostream>
-#include <math.h>
-#
-
 using namespace std;
+
 
 int main()
 {
-    float x1,x2,y1,y2,a;
-    cout<<" введите x1 y1 ";
-    cin>>x1>>y1;
-    cout<<" введите x2 y2";
-    cin>>x2>>y2;
-    a=sqrt( (pow(x2-x1,2) )+ ( pow(y2-y1,2) ) );
-    cout<<a;
-    
-  
+	setlocale(0, "rus");
+	double x1 = 0, x2 = 0, y1 = 0, y2 = 0, katetx = 0, katety = 0, rast = 0;
+	cout << "Введите координаты точек:\n";
+	cout << "\tx1 = ";
+	cin >> x1;
+	cout << "\ty1 = ";
+	cin >> y1;
+	cout << "\tx2 = ";
+	cin >> x2;
+	cout << "\ty2 = ";
+	cin >> y2;
+	if (x1 > x2)
+	{
+		if (x1 >= 0)
+		{
+			if (x2 >= 0)
+			{
+				katetx = x1 - x2;
+			}
+			else
+			{
+				katetx = x1 + abs(x2);
+			}
 
-    return 0;
+
+		}
+		else
+		{
+			katetx = abs(x1) - abs(x2);
+		}
+	
+	}
+	else
+	{
+		if (x2 >= 0)
+		{
+			if (x1 >= 0)
+			{
+				katetx = x2 - x1;
+			}
+			else
+			{
+				katetx = x2 + abs(x1);
+			}
+
+
+		}
+		else
+		{
+			katetx = abs(x2) - abs(x1);
+		}
+	}
+	if (y1 > y2)
+	{
+		if (y1 >= 0)
+		{
+			if (y2 >= 0)
+			{
+				katety = y1 - y2;
+			}
+			else
+			{
+				katety = y1 + abs(y2);
+			}
+		}
+		else
+		{
+			katety = abs(y1) - abs(y2);
+		}
+	}
+	else
+	{
+		if (y2 >= 0)
+		{
+			if (y1 >= 0)
+			{
+				katety = y2 - y1;
+			}
+			else
+			{
+				katety = y2 + abs(y1);
+			}
+
+
+		}
+		else
+		{
+			katety = abs(y2) - abs(y1);
+		}
+	}
+	rast = sqrt(pow(katetx, 2) + pow(katety, 2));
+	cout << "Расстояние : " << rast;
+	return 0;
 }
-N2
 
+
+2)
 #include <iostream>
-#include <math.h>
-
-
 using namespace std;
+
 
 int main()
 {
-    float A,B,C,AC,BC,y;
-    cout<<" введите A ";
-    cin>>A;
-    cout<<" введите B ";
-    cin>>B;
-    cout<<" введите C ";
-    cin>>C;
-    AC=abs(A-C);
-    cout<<"AC="<<AC;
-     BC=abs(B-C);
-    cout<<" "<<"BC="<<AC; 
-    y= AC+BC;
-    cout<<" "<<"сумм="<<y;
-    
-    
-    
-  
-
-    return 0;
+	setlocale(0, "rus");
+	double a=0,b=0,c=0, ac=0,bc=0;
+	cout << "Введите координаты точек:\n";
+	cout << "\ta = ";
+	cin >> a;
+	cout << "\tb = ";
+	cin >> b;
+	cout << "\tc = ";
+	cin >> c;
+	if (a > c)
+	{
+		if (a >= 0)
+		{
+			if (c >= 0)
+			{
+				ac = a - c;
+			}
+			else
+			{
+				ac = abs(c) + a;
+			}
+		}
+		else
+		{
+			ac = abs(c) - abs(a);
+		}
+	}
+	else
+	{
+		if (c >= 0)
+		{
+			if (a >= 0)
+			{
+				ac = c - a;
+			}
+			else
+			{
+				ac = abs(a) + c;
+			}
+		}
+		else
+		{
+			ac = abs(a) - abs(c);
+		}
+	}
+	if (b > c)
+	{
+		if (b >= 0)
+		{
+			if (c >= 0)
+			{
+				bc = b- c;
+			}
+			else
+			{
+				bc = abs(c) + b;
+			}
+		}
+		else
+		{
+			bc = abs(c) - abs(b);
+		}
+	}
+	else
+	{
+		if (c >= 0)
+		{
+			if (b >= 0)
+			{
+				bc = c - b;
+			}
+			else
+			{
+				bc = abs(b) + c;
+			}
+		}
+		else
+		{
+			bc = abs(b) - abs(c);
+		}
+	}
+	cout << "Длина отрезка ас: " << ac << "\n";
+	cout << "Длина отрезка bс: " << bc << "\n";
+	cout << "Сумма : ac + bc = " << ac + bc;
+	return 0;
 }
 
 
-N3
+3)
 #include <iostream>
-#include <math.h>
-#include <stdio.h>
-
 using namespace std;
+
 
 int main()
 {
-    float A,B,C,AC,BC,y;
-    cout<<" введите A ";
-    cin>>A;
-    cout<<" введите B ";
-    cin>>B;
-    cout<<" введите C ";
-    cin>>C;
-    AC=abs(A-C);
-    cout<<"AC="<<AC;
-     BC=abs(B-C);
-    cout<<" "<<"BC="<<AC; 
-    y= AC*BC;
-    cout<<" "<<"произведение AC и BC="<<y;
-    
-    
-    
-  
-
-    return 0;
+	setlocale(0, "rus");
+	double a=0,b=0,c=0, ac=0,bc=0;
+	cout << "Введите координаты точек:\n";
+	cout << "\ta = ";
+	cin >> a;
+	cout << "\tb = ";
+	cin >> b;
+	cout << "\tc = ";
+	cin >> c;
+	if (a > b)
+	{
+		if (c > a or c < b)
+		{
+			cout << "Введите данные, удовлетворяющие условию: точка с лежит между а и b ";
+		}
+		else
+		{
+			if (a > c)
+			{
+				if (a >= 0)
+				{
+					if (c >= 0)
+					{
+						ac = a - c;
+					}
+					else
+					{
+						ac = abs(c) + a;
+					}
+				}
+				else
+				{
+					ac = abs(c) - abs(a);
+				}
+			}
+			else
+			{
+				if (c >= 0)
+				{
+					if (a >= 0)
+					{
+						ac = c - a;
+					}
+					else
+					{
+						ac = abs(a) + c;
+					}
+				}
+				else
+				{
+					ac = abs(a) - abs(c);
+				}
+			}
+			if (b > c)
+			{
+				if (b >= 0)
+				{
+					if (c >= 0)
+					{
+						bc = b - c;
+					}
+					else
+					{
+						bc = abs(c) + b;
+					}
+				}
+				else
+				{
+					bc = abs(c) - abs(b);
+				}
+			}
+			else
+			{
+				if (c >= 0)
+				{
+					if (b >= 0)
+					{
+						bc = c - b;
+					}
+					else
+					{
+						bc = abs(b) + c;
+					}
+				}
+				else
+				{
+					bc = abs(b) - abs(c);
+				}
+			}
+			cout << "Длина отрезка ас: " << ac << "\n";
+			cout << "Длина отрезка ас: " << bc << "\n";
+			cout << "Произведение : ac * bc = " << ac * bc;
+		}
+	}
+	else
+	{
+		if (c > b or c < a)
+		{
+			cout << "Введите данные, удовлетворяющие условию: точка с лежит между а и b ";
+		}
+		else
+		{
+			if (a > c)
+			{
+				if (a >= 0)
+				{
+					if (c >= 0)
+					{
+						ac = a - c;
+					}
+					else
+					{
+						ac = abs(c) + a;
+					}
+				}
+				else
+				{
+					ac = abs(c) - abs(a);
+				}
+			}
+			else
+			{
+				if (c >= 0)
+				{
+					if (a >= 0)
+					{
+						ac = c - a;
+					}
+					else
+					{
+						ac = abs(a) + c;
+					}
+				}
+				else
+				{
+					ac = abs(a) - abs(c);
+				}
+			}
+			if (b > c)
+			{
+				if (b >= 0)
+				{
+					if (c >= 0)
+					{
+						bc = b - c;
+					}
+					else
+					{
+						bc = abs(c) + b;
+					}
+				}
+				else
+				{
+					bc = abs(c) - abs(b);
+				}
+			}
+			else
+			{
+				if (c >= 0)
+				{
+					if (b >= 0)
+					{
+						bc = c - b;
+					}
+					else
+					{
+						bc = abs(b) + c;
+					}
+				}
+				else
+				{
+					bc = abs(b) - abs(c);
+				}
+			}
+			cout << "Длина отрезка ас: " << ac << "\n";
+			cout << "Длина отрезка ас: " << bc << "\n";
+			cout << "Произведение : ac * bc = " << ac * bc;
+		}
+	}
+	return 0;
 }
-
-
-N5
+4)
 #include <iostream>
-#include <math.h>
-#include <stdio.h>
-
 using namespace std;
+
 
 int main()
 {
-    float x1,x2,y1,y2,x3,y3,P,S,a,b,c,e;
-    cout<<" введите x1 y1 ";
-    cin>>x1>>y1;
-    cout<<" введите x2 y2 ";
-    cin>>x2>>y2;
-    cout<<" введите x3 y3 ";
-    cin>>x3>>y3;
-    a=sqrt( (pow(x2-x1,2) )+ ( pow(y2-y1,2) ) );
-    b=sqrt( (pow(x3-x2,2) )+ ( pow(y3-y2,2) ) );
-    c=sqrt( (pow(x3-x1,2) )+ ( pow(y3-y1,2) ) );
-    
-    P=a+b+c;
-    cout<<" "<<"P="<<P;
-    e=P/2;
-    S=sqrt(e*(e-a)*(e-b)*(e-c));
-    cout<<" "<<"S="<<S;
-    return 0;
+	setlocale(0, "rus");
+	double x1 = 0, x2 = 0, y1 = 0, y2 = 0, storona_x = 0, storona_y = 0, S = 0,P=0;
+	cout << "Введите координаты вершин:\n";
+	cout << "\tx1 = ";
+	cin >> x1;
+	cout << "\ty1 = ";
+	cin >> y1;
+	cout << "\tx2 = ";
+	cin >> x2;
+	cout << "\ty2 = ";
+	cin >> y2;
+	if (x1 > x2)
+	{
+		if (x1 >= 0)
+		{
+			if (x2 >= 0)
+			{
+				storona_x = x1 - x2;
+			}
+			else
+			{
+				storona_x = x1 + abs(x2);
+			}
+
+
+		}
+		else
+		{
+			storona_x = abs(x1) - abs(x2);
+		}
+
+
+	}
+	else
+	{
+		if (x2 >= 0)
+		{
+			if (x1 >= 0)
+			{
+				storona_x = x2 - x1;
+			}
+			else
+			{
+				storona_x = x2 + abs(x1);
+			}
+
+
+		}
+		else
+		{
+			storona_x = abs(x2) - abs(x1);
+		}
+	}
+	if (y1 > y2)
+	{
+		if (y1 >= 0)
+		{
+			if (y2 >= 0)
+			{
+				storona_y = y1 - y2;
+			}
+			else
+			{
+				storona_y = y1 + abs(y2);
+			}
+		}
+		else
+		{
+			storona_y = abs(y1) - abs(y2);
+		}
+	}
+	else
+	{
+		if (y2 >= 0)
+		{
+			if (y1 >= 0)
+			{
+				storona_y = y2 - y1;
+			}
+			else
+			{
+				storona_y = y2 + abs(y1);
+			}
+
+
+		}
+		else
+		{
+			storona_y = abs(y2) - abs(y1);
+		}
+	}
+	S = storona_x * storona_y;
+	P = 2 * (storona_x + storona_y);
+	cout << "Площадь : " << S << "\n";
+	cout << "Периметр : " << P;
+	return 0;
 }
-N4
+
+
+5)
 #include <iostream>
-#include <math.h>
-
-
 using namespace std;
+
 
 int main()
 {
-    float x1,x2,y1,y2,a,S,P;
-    cout<<" введите x1 y1 ";
-    cin>>x1>>y1;
-    cout<<" введите x2 y2";
-    cin>>x2>>y2;
-    P=2*(sqrt( (pow(x2-x1,2) )+ ( pow(y2-y1,2) ) ) );
-    cout<<" "<<"P="<<P;
-    S=abs(x2-x1)*abs(y2-y1);
-    cout<<" "<<"S="<<S;
-    
-  
+	setlocale(0, "rus");
+	double x1 = 0, x2 = 0,x3=0,y3=0, y1 = 0, y2 = 0, katetx_1 = 0, katety_1 = 0, Storona_1 = 0,katety_2=0,katetx_2=0,Storona_2=0,katetx_3=0,katety_3=0,Storona_3=0,P=0,S=0,p=0;
+	cout << "Введите координаты точек:\n";
+	cout << "\tx1 = ";
+	cin >> x1;
+	cout << "\ty1 = ";
+	cin >> y1;
+	cout << "\tx2 = ";
+	cin >> x2;
+	cout << "\ty2 = ";
+	cin >> y2;
+	cout << "\tx3 = ";
+	cin >> x3;
+	cout << "\ty3 = ";
+	cin >> y3;
+	if (x1 > x2)
+	{
+		if (x1 >= 0)
+		{
+			if (x2 >= 0)
+			{
+				katetx_1 = x1 - x2;
+			}
+			else
+			{
+				katetx_1 = x1 + abs(x2);
+			}
 
-    return 0;
+
+		}
+		else
+		{
+			katetx_1 = abs(x1) - abs(x2);
+		}
+
+
+	}
+	else
+	{
+		if (x2 >= 0)
+		{
+			if (x1 >= 0)
+			{
+				katetx_1 = x2 - x1;
+			}
+			else
+			{
+				katetx_1 = x2 + abs(x1);
+			}
+
+
+		}
+		else
+		{
+			katetx_1 = abs(x2) - abs(x1);
+		}
+	}
+	if (y1 > y2)
+	{
+		if (y1 >= 0)
+		{
+			if (y2 >= 0)
+			{
+				katety_1 = y1 - y2;
+			}
+			else
+			{
+				katety_1 = y1 + abs(y2);
+			}
+		}
+		else
+		{
+			katety_1 = abs(y1) - abs(y2);
+		}
+	}
+	else
+	{
+		if (y2 >= 0)
+		{
+			if (y1 >= 0)
+			{
+				katety_1 = y2 - y1;
+			}
+			else
+			{
+				katety_1 = y2 + abs(y1);
+			}
+
+
+		}
+		else
+		{
+			katety_1 = abs(y2) - abs(y1);
+		}
+	}
+	Storona_1 = sqrt(pow(katetx_1, 2) + pow(katety_1, 2));
+	if (x1 > x3)
+	{
+		if (x1 >= 0)
+		{
+			if (x3 >= 0)
+			{
+				katetx_2 = x1 - x3;
+			}
+			else
+			{
+				katetx_2 = x1 + abs(x3);
+			}
+
+
+		}
+		else
+		{
+			katetx_2 = abs(x1) - abs(x3);
+		}
+
+
+	}
+	else
+	{
+		if (x3 >= 0)
+		{
+			if (x1 >= 0)
+			{
+				katetx_2 = x3 - x1;
+			}
+			else
+			{
+				katetx_2 = x3 + abs(x1);
+			}
+
+
+		}
+		else
+		{
+			katetx_2 = abs(x3) - abs(x1);
+		}
+	}
+	if (y1 > y3)
+	{
+		if (y1 >= 0)
+		{
+			if (y3 >= 0)
+			{
+				katety_2 = y1 - y3;
+			}
+			else
+			{
+				katety_2 = y1 + abs(y3);
+			}
+		}
+		else
+		{
+			katety_2 = abs(y1) - abs(y3);
+		}
+	}
+	else
+	{
+		if (y3 >= 0)
+		{
+			if (y1 >= 0)
+			{
+				katety_2 = y3 - y1;
+			}
+			else
+			{
+				katety_2 = y3 + abs(y1);
+			}
+
+
+		}
+		else
+		{
+			katety_2 = abs(y3) - abs(y1);
+		}
+	}
+	Storona_2 = sqrt(pow(katetx_2, 2) + pow(katety_2, 2));
+	if (x3 > x2)
+	{
+		if (x3 >= 0)
+		{
+			if (x2 >= 0)
+			{
+				katetx_3 = x3 - x2;
+			}
+			else
+			{
+				katetx_3 = x3 + abs(x2);
+			}
+
+
+		}
+		else
+		{
+			katetx_3 = abs(x3) - abs(x2);
+		}
+
+
+	}
+	else
+	{
+		if (x2 >= 0)
+		{
+			if (x3 >= 0)
+			{
+				katetx_3 = x2 - x3;
+			}
+			else
+			{
+				katetx_3 = x2 + abs(x3);
+			}
+
+
+		}
+		else
+		{
+			katetx_3 = abs(x2) - abs(x3);
+		}
+	}
+	if (y3 > y2)
+	{
+		if (y3 >= 0)
+		{
+			if (y2 >= 0)
+			{
+				katety_3 = y3 - y2;
+			}
+			else
+			{
+				katety_3 = y3 + abs(y2);
+			}
+		}
+		else
+		{
+			katety_3 = abs(y3) - abs(y2);
+		}
+	}
+	else
+	{
+		if (y2 >= 0)
+		{
+			if (y3 >= 0)
+			{
+				katety_3 = y2 - y3;
+			}
+			else
+			{
+				katety_3 = y2 + abs(y3);
+			}
+
+
+		}
+		else
+		{
+			katety_3 = abs(y2) - abs(y3);
+		}
+	}
+	Storona_3 = sqrt(pow(katetx_3, 2) + pow(katety_3, 2));
+	P = Storona_1 + Storona_2 + Storona_3;
+	p = P / 2;
+	S = sqrt(p * (p - Storona_1) * (p - Storona_2) * (p - Storona_3));
+	cout << "Периметр треугольника : " << P << "\n";
+	cout << "Площадь треугольника : " << S;
+	return 0;
 }
+
