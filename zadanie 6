@@ -1,0 +1,139 @@
+N1
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int A,B;
+    cout<<"введите начальные значение A и B";
+    cin>>A>>B;
+      A=A+B;
+      B=A-B;
+      A=A-B;
+     
+    cout<<A<<B;
+
+    return 0;
+}
+N2
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int A,B,C;
+    int d;
+    cout<<"введите начальные значение A,B и C";
+    cin>>A>>B>>C;
+      d=A;
+      A=B;
+      B=C;
+      C=d;
+      
+     
+    cout<<A<<B<<C;
+
+    return 0;
+}
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+N3
+    int A,B,C;
+    int d;
+    cout<<"введите начальные значение A,B и C";
+    cin>>A>>B>>C;
+      d=A;
+      A=C;
+      C=B;
+      B=d;
+      
+     
+    cout<<A<<B<<C;
+
+    return 0;
+}
+
+N
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{ 
+    double x;
+    int y;
+    cin>>x;
+    y=3*pow(x,6)-6*pow(x,2)-7;
+    
+    cout<<y;
+    
+    return 0;
+}
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{ 
+    double d;
+    int x;
+    int y;
+    cin>>x;
+    d=x-3;
+    y=4*pow(d,6) - 7*pow(d,3) + 2;
+    
+    cout<<y;
+    
+    return 0;
+}
+
+
+N4
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{ 
+    
+    double c,d=2,e,A;
+    cin>>A;
+    e=2*2*2;
+    A=pow(A,e);
+    
+    
+    cout<<A;
+    
+    return 0;
+}
+N5
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+setlocale(0, "rus");
+double A, t, k ;
+cout « "ВВедите значение А, для вычисления А^15: \n";
+cout « "\tA = ";
+cin » A;
+k = A;
+t = A * A;
+t = t * t;
+t = t * t;
+t = t * t;
+A = t * pow(k, -1);
+cout « "A^15 = " « A;
+return 0;
+}
