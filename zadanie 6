@@ -1,3 +1,4 @@
+https://github.com/TimofeyZenkov/TimofeyZenkov/blob/main/zadanie%206
 N1
 #include <iostream>
 
@@ -37,13 +38,14 @@ int main()
 
     return 0;
 }
+N3
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
-N3
+
     int A,B,C;
     int d;
     cout<<"введите начальные значение A,B и C";
@@ -59,7 +61,7 @@ N3
     return 0;
 }
 
-N
+N4
 #include <iostream>
 #include <cmath>
 
@@ -76,7 +78,7 @@ int main()
     
     return 0;
 }
-
+N5
 #include <iostream>
 #include <cmath>
 
@@ -97,7 +99,7 @@ int main()
 }
 
 
-N4
+N6
 #include <iostream>
 #include <cmath>
 
@@ -116,7 +118,7 @@ int main()
     
     return 0;
 }
-N5
+N7
 #include <iostream>
 #include <math.h>
 using namespace std;
